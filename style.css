@@ -286,7 +286,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   }
   /*細かい調整*/
   #wrap {
-    margin-top: 90px;
+    margin-top: 150px;
 		margin-left:auto;
 		margin-right:auto;
     padding: 35px 20px 0;
@@ -320,9 +320,5 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   
   h2 img {
     max-width: 100%;
-  }
-	
-	#portfolio {
-    background-image: url(../images/bg-portfolio-sp.jpg);
   }
 }
