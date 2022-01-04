@@ -171,15 +171,18 @@ section {
 } */
 
 /*全imgの大きさを変更、その後に上のimgの大きさを戻す*/
+img[src$="image/logo.png"] {
+	width: 150px;
+}
 #illustration img{
 	width: 60%;
 	height: auto;
 }
 
-img[src$="image/logo.png"] {
+#illustration img[src$="image/logo.png"] {
 	width: 150px;
-	
 }
+
 
 
 /*ここまでがセット*/
