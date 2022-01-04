@@ -176,8 +176,9 @@ section {
 	height: auto;
 }
 
-#illustration img[src$="image/logo.png"] {
-	width: 120;
+img[src$="image/logo.png"] {
+	width: 150px;
+	
 }
 
 
@@ -260,7 +261,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   h2 {
     font-size: 6vw;
   }
-  
+
   header {
     width: auto;
     margin: 0 5%;
