@@ -321,4 +321,83 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   h2 img {
     max-width: 100%;
   }
+
+@media screen and (min-width:560px) {
+ /*画面サイズが560px以下の場合に適用*/
+    body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+	header { /*ヘッダー（ナビ）の全体位置の調整*/
+		width: auto;/*ヘッダバランスこれでいいか？*/
+		height: 100px;
+		margin: 0 auto;
+	}
+  
+	.logo { /*logoでもimgでもどっちでもいいのかしら、ナビが横に移動　いい感じに(というよりかlogoが左に浮遊した)*/
+		float: left;
+		margin-top: 60px;
+		margin-left: 10;
+	}
+	.global-nav li {/*ロゴの右空間の左寄りに並ぶ*/
+		float: right;
+		margin: 0px 30px;/*初めの数字は上側の隙間、二番目は左の隙間*/
+		font-size: 20px; /*ナビ文字の大きさ*/
+		list-style: none;
+		font-family: 'Bitter', serif;/*フォントの切り替え*/
+	}
+
+  /*細かい調整*/
+	#wrap {
+		clear: both;/*これは、、何？welcomが下に降りてきた、floatの回り込みの解除*/
+	 /*wrap部分の白背景*/
+		background-color: aliceblue;
+		background-color: rgba(255,255,255,0.8);
+		margin: 10%;
+		padding: 35px 5;/*中身の文字の左上の隙間*/
+	}
+	.content {　/*中身の中身960px*/
+		width: 960px;
+		margin: 0 auto;
+	}
+	
+	#illustration img{
+	width: 70%;
+	height: auto;	
+	}
+  
+	
+	#index .content{
+		margin: 0px 20px;
+		padding: 10px 5px 0px;
+		text-align: left;
+		background-color:floralwhite;
+		background-color: rgba(255,255,255,0.8);
+	}
+	.btn{
+	margin-left: 5px;
+	padding-bottom: 10px;
+	}
+	
+  .content {
+    width: 100%;
+  }
+  
+  .main {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  h2 img {
+    max-width: 100%;
+  }
 }
