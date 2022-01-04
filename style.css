@@ -45,13 +45,13 @@ a:hover {　/*マウスが乗った時の挙動*/
 
 header { /*ヘッダー（ナビ）の全体位置の調整*/
 	width: auto;/*ヘッダバランスこれでいいか？*/
-	height: 110px;
+	height: 100px;
 	margin: 0 auto;
 }
 
 .logo { /*logoでもimgでもどっちでもいいのかしら、ナビが横に移動　いい感じに(というよりかlogoが左に浮遊した)*/
 	float: left;
-	margin-top: 60px;
+	margin-top: 50px;
 	margin-left: 10px;
 }
 .global-nav {
