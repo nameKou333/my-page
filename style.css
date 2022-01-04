@@ -331,10 +331,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
 	width: 230px;/*この幅設定は単独ではa要素に適用されない*/
 	display: block; /*これにより幅指定が可能になる*/
 	text-align: center;/*背景色の中心に文字を置く*/
-	line-height: 70px;/*箱の高さ*/
-	margin-top: 20px;
-	border-radius: 5px;
-	border: 3px solid chocolate;
+	line-height: 50px;/*箱の高さ*/
 }
 
 @media screen and (min-width:1080px) {
