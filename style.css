@@ -124,11 +124,12 @@ footer small{
 /*以上が前共通のテンプレート*/
 /*以下、indexに対応するcss*/
 #index p {
-	font-size: 16px;
+	font-size: 32px;
 	color: #333333;
 }
 
 footer{
+	font-size: 32px;
 	width: 100%;
 	margin: 150px auto 0 auto;
 	/*上幅指定、左右はオート。下はゼロ*/
