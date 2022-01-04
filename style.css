@@ -51,7 +51,7 @@ header { /*ヘッダー（ナビ）の全体位置の調整*/
 
 .logo { /*logoでもimgでもどっちでもいいのかしら、ナビが横に移動　いい感じに(というよりかlogoが左に浮遊した)*/
 	float: left;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 10px;
 }
 .global-nav {
@@ -172,7 +172,7 @@ section {
 
 /*全imgの大きさを変更、その後に上のimgの大きさを戻す*/
 img[src$="image/logo.png"] {
-	width: 150px;
+	width: 120px;
 }
 #illustration img{
 	width: 60%;
@@ -180,7 +180,7 @@ img[src$="image/logo.png"] {
 }
 
 #illustration img[src$="image/logo.png"] {
-	width: 150px;
+	width: 120px;
 }
 
 
