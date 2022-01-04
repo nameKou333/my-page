@@ -45,7 +45,7 @@ a:hover {　/*マウスが乗った時の挙動*/
 
 header { /*ヘッダー（ナビ）の全体位置の調整*/
 	width: auto;/*ヘッダバランスこれでいいか？*/
-	height: 100px;
+	height: 110px;
 	margin: 0 auto;
 }
 
@@ -53,7 +53,6 @@ header { /*ヘッダー（ナビ）の全体位置の調整*/
 	float: left;
 	margin-top: 60px;
 	margin-left: 10px;
-	margin-bottom: 0;
 }
 .global-nav {
 	float: right;
