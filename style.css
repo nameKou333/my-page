@@ -52,7 +52,8 @@ header { /*ヘッダー（ナビ）の全体位置の調整*/
 .logo { /*logoでもimgでもどっちでもいいのかしら、ナビが横に移動　いい感じに(というよりかlogoが左に浮遊した)*/
 	float: left;
 	margin-top: 60px;
-	margin-left: 10;
+	margin-left: 10px;
+	margin-bottom: 0;
 }
 .global-nav {
 	float: right;
