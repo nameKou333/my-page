@@ -129,12 +129,13 @@ footer small{
 }
 
 footer{
-	font-size: 32px;
 	width: 100%;
 	margin: 150px auto 0 auto;
 	/*上幅指定、左右はオート。下はゼロ*/
 	/*text-align:left;*/
 }
+footer p{
+	font-size: 32px;
 
 #index footer{
 	background-color: transparent;/*indexのみ背景色が透明に*/
@@ -269,7 +270,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   
   .logo {
     float: none;
-    margin top: 60px
+    margin top: 60px;
     text-align: center;
   }
   
@@ -306,7 +307,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
 		background-color: rgba(255,255,255,0.8);
 	}
 	.btn{
-	margin-left: 2px
+	margin-left: 2px;
 	}
 	
   .content {
