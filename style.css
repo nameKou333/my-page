@@ -246,7 +246,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
 }
 
 /*以下は指定の大きさでの表示*/
-@media screen and (max-width:440px) {
+@media screen and (max-width:780px) {
  /*画面サイズが560px以下の場合に適用*/
   
   body {
