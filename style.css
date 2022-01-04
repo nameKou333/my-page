@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/*全体にかかる仕様*/
+
+body {
+	margin: 0;
+	padding: 0 ;
+	background-color: #cccccc;
+	color: #333333;
+	font-size:15px;
+	line-height: 2;
+	/*背景色、文字色、文字サイズ、全体の余白など*/
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+}
+img {
+	vertical-align:middle;
+	width: 100;
+	height: auto;
+	border-radius: 50px;
+	border: 2px solid #cccccc;
+	/*imgのサイズ、位置変更*/
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	/*ナビの5つの位置調整*/
+}
+
+/*ここまででクソダサレイアウトの解除*/
+a {
+	color:#333333;
+	text-decoration: none; /*アンダーラインの削除*/
+}
+
+a:visited { /*一度訪れたページの描画*/
+	color:beige;
+}
+a:hover {　/*マウスが乗った時の挙動*/
+	text-decoration: underline;
+}
+
+header { /*ヘッダー（ナビ）の全体位置の調整*/
+	width: auto;/*ヘッダバランスこれでいいか？*/
+	height: 100px;
+	margin: 0 auto;
+}
+
+.logo { /*logoでもimgでもどっちでもいいのかしら、ナビが横に移動　いい感じに(というよりかlogoが左に浮遊した)*/
+	float: left;
+	margin-top: 60px;
+	margin-left: 10;
+}
+.global-nav {
+	float: right;
+	margin-top: 40px;
+}
+
+.global-nav li {/*ロゴの右空間の左寄りに並ぶ*/
+	float: left;
+	margin: 0 20px;/*初めの数字は上側の隙間、二番目は左の隙間*/
+	font-size: 20px; /*ナビ文字の大きさ*/
+	list-style: none;
+	font-family: 'Bitter', serif;/*フォントの切り替え*/
+}
+.global-nav li a {
+	color:#ffffff;
+}
+
+.global-nav li a:hover{ /*下線の色も変更に*/
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 3px;
+	text-decoration: none;
+}/*下線を二重にして上を削除*/
+
+#wrap {
+	clear: both;/*これは、、何？welcomが下に降りてきた、floatの回り込みの解除*/
+	; /*wrap部分の白背景*/
+	background-color: aliceblue;
+	background-color: rgba(255,255,255,0.8);
+	margin: 10%;
+	padding: 35px 5;/*中身の文字の左上の隙間*/
+}
+.content {　/*中身の中身960px*/
+	width: 960px;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: center;
+	color: #ffffff;
+	padding: 20px 0;
+	background-color:blanchedalmond;
+}
+
+footer small{
+	font-size:12px;
+}
+
+/*以降、ボタンと名前を付けるとこの設定で装飾が着く*/
+.btn a {
+	background-color:coral;
+	color:#ffffff;
+	font-size: 20px;
+	font-family: 'Bitter', serif;/*↓すごい！！！*/
+	width: 230px;/*この幅設定は単独ではa要素に適用されない*/
+	display: block; /*これにより幅指定が可能になる*/
+	text-align: center;/*背景色の中心に文字を置く*/
+	line-height: 50px;/*箱の高さ*/
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 3px solid chocolate;
+}
+.btn a:hover{
+	text-decoration: none;
+	background-color:darkred;
+	color:bisque;
+}
+
+
+/*以上が前共通のテンプレート*/
+/*以下、indexに対応するcss*/
+#index p {
+	font-size: 16px;
+	color: #cccccc;
+}
+
+footer{
+	width: 100%;
+	margin: 150px auto 0 auto;
+	/*上幅指定、左右はオート。下はゼロ*/
+	/*text-align:left;*/
+}
+
+#index footer{
+	background-color: transparent;/*indexのみ背景色が透明に*/
+}
+
+#index{
+	background-image: url(image/index_bg.jpg);/*単独だとタイル状になっている*/
+	background-repeat: no-repeat;/*繰り返しがなくなる*/
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;/*領域を完全にカバーする*/
+}
+
+#illustration, #music, #study, #novel, #contact{
+	background-image: url(image/com.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;/*領域を一部に*/
+}
+
+section {
+  margin-bottom: 35px; /*35px*/
+}
+
+#illustration .illustration-list li{
+	list-style:none;
+	margin-top:20px
+}
+
+/*#illustration .illustration-list li{   これはフロートしていい感じに並べてる
+	float: left;
+	list-style: none;
+	margin: 0 10px 15px 0;
+} */
+
+/*全imgの大きさを変更、その後に上のimgの大きさを戻す*/
+#illustration img{
+	width: 60%;
+	height: auto;
+}
+
+#illustration img[src$="image/logo.png"] {
+	width: 100;
+}
+
+
+/*ここまでがセット*/
+/*
+#photograph .photograph-list li:nth-child(3n){  これは何
+  margin-right: 0;
+}*/
+
+.main-center{  /*これは何？*/
+	width: 940px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	font-size: 36px;
+	border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+}
+
+.icon:before { /*アイコンの前にグリーンの印をつける！！*/
+	content:"";
+	padding-right: 10px;
+	border-left: 7px solid #9cb4a4;
+}
+
+#index #wrap {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+}
+
+.main {
+  width: 960px;
+  margin: 0 10px;
+}
+
+a img:hover{  /*imgにカーソルが乗っている時の反応*/
+  opacity: 0.8;
+}
+
+.outsite:hover {
+	text-decoration: underline;
+}
+#novel h3 a{
+	color: 333333;
+	
+}
+
+/*
+
+
+
+↓↓くっそ大事な式
+
+*/
+.clearfix:after { /*clearfixタグの後ろにブロックを設置。これによってh2が適切な位置に挟み込まれた**/
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/*以下は指定の大きさでの表示*/
+@media screen and (max-width:560px) {
+ /*画面サイズが560px以下の場合に適用*/
+  
+  body {
+    font-size: 3.5vw;
+  }
+  
+  h1 {
+    font-size: 7.2vw;
+  }
+  
+  h2 {
+    font-size: 6vw;
+  }
+  
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  .logo {
+    float: none;
+    margin top: 60px
+    text-align: center;
+  }
+  
+  .global-nav {
+    float: none;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .global-nav li {
+    display: inline;
+    float: none;
+    margin: 0 8px;
+  }
+  /*細かい調整*/
+  #wrap {
+    margin-top: 90px;
+		margin-left:auto;
+		margin-right:auto;
+    padding: 35px 20px 0;
+  }
+	
+	#illustration img{
+	width: 100%;
+	height: auto;	
+	}
+  
+	
+	#index .content{
+		margin-top:40%;
+		text-align: center;
+		background-color:floralwhite;
+		background-color: rgba(255,255,255,0.8);
+	}
+	.btn{
+	margin-left: 2px
+	}
+	
+  .content {
+    width: 100%;
+  }
+  
+  .main {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  h2 img {
+    max-width: 100%;
+  }
+	
+	#portfolio {
+    background-image: url(../images/bg-portfolio-sp.jpg);
+  }
+}
