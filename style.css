@@ -97,7 +97,7 @@ footer {
 }
 
 footer small{
-	font-size:12px;
+	font-size:24px;
 }
 
 /*以降、ボタンと名前を付けるとこの設定で装飾が着く*/
@@ -177,7 +177,7 @@ section {
 }
 
 #illustration img[src$="image/logo.png"] {
-	width: 100;
+	width: 120;
 }
 
 
@@ -322,7 +322,7 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
     max-width: 100%;
   }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1080px) {
  /*画面サイズが960px以上の場合に適用*/
     body {
     font-size: 15px;
