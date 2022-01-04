@@ -134,8 +134,6 @@ footer{
 	/*上幅指定、左右はオート。下はゼロ*/
 	/*text-align:left;*/
 }
-footer p{
-	font-size: 32px;
 
 #index footer{
 	background-color: transparent;/*indexのみ背景色が透明に*/
