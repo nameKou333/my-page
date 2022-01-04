@@ -245,10 +245,10 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   clear: both;
 }
 
-/*以下は指定の大きさでの表示*/
-@media screen and (max-width:480px) {
- /*画面サイズが560px以下の場合に適用*/
-  
+/*以下は指定の大きさでの表示
+@media screen and (max-width:780px) {
+ 画面サイズが560px以下の場合に適用*/
+
   body {
     font-size: 3.5vw;
   }
@@ -321,8 +321,8 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
   h2 img {
     max-width: 100%;
   }
-}
-@media screen and (min-width:481px) {
+
+@media screen and (min-width:1080px) {
  /*画面サイズが560px以下の場合に適用*/
     body {
     font-size: 15px;
@@ -401,3 +401,4 @@ a img:hover{  /*imgにカーソルが乗っている時の反応*/
     max-width: 100%;
   }
 }
+	
