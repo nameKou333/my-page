@@ -26,9 +26,6 @@
 		opacity: .5;
 	}
 }
-.loadingText{
-	animation: .5s flashing infinite;
-}
 .ml5 {
   position: relative;
   font-weight: 300;
