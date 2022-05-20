@@ -1,7 +1,7 @@
 window.addEventListener("load", function(){
 	setTimeout(function(){
 		document.getElementById("loading").classList.remove("active"); 
-	}, 3000)
+	}, 3500)
 })
 
 anime.timeline({loop: true})
